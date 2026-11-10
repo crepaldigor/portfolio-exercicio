@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #f9f8f5;
+    --fg: #2a2826;
+    --muted: #8a8780;
+    --border: #dedcd6;
+}
+
+body {
+    background: var(--bg);
+    color: var(--fg);
+}
+
+/* Portfolio */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.pf {
+    max-width: 52rem;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+.pf a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.pf-nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: .9rem;
+}
+
+.pf-nav nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.pf-nav a:hover,
+.pf-mail:hover {
+    text-decoration: underline;
+}
+
+.pf-label {
+    font-family: ui-monospace, monospace;
+    font-size: .75rem;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+}
+
+.pf-hero {
+    padding: 8rem 0 6rem;
+}
+
+.pf-hero h1 {
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    line-height: 1.1;
+    font-weight: 400;
+}
+
+.pf-section {
+    padding: 4rem 0;
+    border-top: 1px solid var(--border);
+}
+
+.pf-list {
+    list-style: none;
+    padding: 0;
+}
+
+.pf-list li {
+    display: grid;
+    grid-template-columns: 3rem 1fr auto;
+    gap: 1rem;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.pf-list h3 {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.pf-list p {
+    color: var(--muted);
+    font-size: .95rem;
+}
+
+.pf-num {
+    font-family: ui-monospace, monospace;
+    font-size: .8rem;
+    color: var(--muted);
+    padding-top: .3rem;
+}
+
+.pf-about p:last-child {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    max-width: 38rem;
+}
+
+.pf-mail {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.pf-foot {
+    padding-top: 3rem;
+    font-size: .8rem;
+    color: var(--muted);
+}
